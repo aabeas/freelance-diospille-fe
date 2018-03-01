@@ -1,4 +1,34 @@
-# FreelanceDiospilleFe
+# Diospille Freelance Front-End
+
+> A distributed Angular with Ruby on Rails application for freelance proposal creation
+
+### Features
+
+- API generation
+- Real-time updates
+- Microservice architecture
+
+### Code Example
+
+```ruby
+def method_example
+  puts "smile often"
+end
+```
+
+```angular
+@NgModule({
+  declarations: [],
+  imports: [],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+```javascript
+alert('Hows it?');
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
