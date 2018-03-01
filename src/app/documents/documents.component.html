@@ -1,0 +1,17 @@
+<div class="doc-style">
+  <h1>{{pageTitle}}</h1>
+
+  <div *ngFor="let doc of documents">
+    <h3>{{ doc.title }}</h3>
+    <p>
+      {{ doc.updated_at }}
+    </p>
+    <em> {{ doc.description }} </em><br>
+    <div class="">
+      <a href="{{ doc.file_url }}">Download File</a>
+    </div>
+    <p>
+      {{ doc.image_url }}
+    </p>
+  </div>
+</div>
