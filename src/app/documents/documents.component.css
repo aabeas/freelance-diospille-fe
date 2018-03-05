@@ -1,4 +1,12 @@
+.temp-style {
+  position: absolute;
+  padding: 0 20px;
+}
+
 .doc-style {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: sticky;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
