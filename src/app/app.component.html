@@ -1,31 +1,39 @@
-<nav class="navbar navbar-light navbar-fixed-top navbar-expand-lg">
-  <a class="navbar-brand" href="#/">Eravodua</a>
-  <button aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" type="button">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navbar-collapse collapse" id="navbarContent">
-    <div class="navbar-nav mr-auto">
-      <div class="nav navbar-nav">
-        <div class="btn-group">
-          <button type="button" class="btn btn-outline-primary" routerLink="/home" routerLinkActive="active">Home</button>
-          <button type="button" class="btn btn-outline-primary" routerLink="/documents" routerLinkActive="active">Docs</button>
-          <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
-            <button class="btn btn-outline-primary dropdown-toggle-split" ngbDropdownToggle>Proposals</button>
-            <div class="dropdown-menu" ngbDropdownMenu>
-              <button class="dropdown-item" routerLink="/proposals" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Props</button>
-              <button class="dropdown-item" routerLink="/proposals/new" routerLinkActive="active">New Prop</button>
+<header class="">
+  <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #ffffff;">
+    <a class="navbar-brand" href="#/">Eravodua</a>
+    <button aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler navbar-toggler-right"
+            type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <div class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <div class="nav navbar-nav">
+          <div class="btn-group">
+            <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" routerLink="/documents" routerLink="/documents" outerLinkActive="active">Docs</a>
+            <div class="nav-item dropdown" ngbDropdown>
+              <a class="nav-link dropdown-toggle" ngbDropdownToggle role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Proposals</a>
+              <div class="dropdown-menu" ngbDropdownMenu>
+                <a class="dropdown-item" routerLink="/proposals" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Props</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" routerLink="/proposals/new" routerLinkActive="active">New Prop</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
+<div class="logo">
+  <img alt="Eravodua Logo" src="../assets/images/logo02l.png">
+</div>
 
-  <div class="logo">
-    <img alt="Eravodua Logo" src="../assets/images/logo02l.png">
-  </div>
-
-
-<router-outlet></router-outlet>
+<div class="app-body">
+  <router-outlet></router-outlet>
+</div>
