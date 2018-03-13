@@ -2,3 +2,9 @@
   padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.foasheet {
+  background-color: #fff;
+  border: 6px solid black;
+  padding: 75px 25px 50px 50px;
+}

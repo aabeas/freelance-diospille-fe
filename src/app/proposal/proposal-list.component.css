@@ -1,0 +1,8 @@
+.proposal-link:hover {
+  text-decoration: none;
+}
+
+.proposal-link {
+  padding: 5px 0px;
+  font-size: 20px;
+}
