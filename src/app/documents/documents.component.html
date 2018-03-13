@@ -1,17 +1,15 @@
-<div class="temp-style">
+<div class="container" style="padding: 20px;">
   <h1>{{pageTitle}}</h1>
   <div class="doc-style">
-    <div class="card" style="width: 20rem; padding: 10px;" *ngFor="let doc of documents">
+    <div class="card doc-card sharp" *ngFor="let doc of documents">
       <img class="card-img-top" src="{{ doc.image_url }}" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">{{ doc.title }}</h4>
-        <p class="card-text">
-          {{ doc.updated_at }}
+        <p class="card-text text-muted">
+            {{ doc.updated_at }}
         </p>
         <p class="card-text">
-          <small class="text-muted">
-            {{ doc.description }}
-          </small>
+          {{ doc.description }}
         </p>
         <p class="card-text">
           <a href="{{ doc.file_url }}" class="btn btn-large btn-outline-primary">Download File</a>

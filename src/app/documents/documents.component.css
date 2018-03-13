@@ -1,15 +1,15 @@
-.temp-style {
-  position: absolute;
-  padding: 0 20px;
-}
-
 .doc-style {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   position: sticky;
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
   color: black;
+}
+
+.doc-card {
+  margin: 0 5px;
+  width: 20rem;
+  padding: 10px;
 }

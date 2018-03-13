@@ -1,4 +1,17 @@
 body {
   background-color: #ffffff;
   margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.heading {
+  padding: 20px 0;
+}
+
+.sharp {
+  border-radius: 0;
 }
